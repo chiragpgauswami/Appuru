@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>
+      Appuru - Responsive Bootstrap 5 App Landing Page Documentation
+    </title>
+
+    <!-- Meta -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta
+      name="description"
+      content="Appuru - Responsive Bootstrap 5 App Landing Page Documentation"
+    />
+    <meta name="author" content="Chirag Gauswami" />
+    <link rel="shortcut icon" href="favicon.png" />
+
+    <!-- Google Font -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- FontAwesome JS-->
+    <script defer src="assets/fontawesome/js/all.min.js"></script>
+
+    <!-- Plugins CSS -->
+    <link
+      rel="stylesheet"
+      href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.2/styles/atom-one-dark.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="assets/plugins/simplelightbox/simple-lightbox.min.css"
+    />
+
+    <!-- Theme CSS -->
+    <link id="theme-style" rel="stylesheet" href="assets/css/theme.css" />
+  </head>
+
+  <body class="docs-page">
+    <header class="header fixed-top">
+      <div class="branding docs-branding">
+        <div class="container-fluid position-relative py-2">
+          <div class="docs-logo-wrapper">
+            <button
+              id="docs-sidebar-toggler"
+              class="docs-sidebar-toggler docs-sidebar-visible me-2 d-xl-none"
+              type="button"
+            >
+              <span></span>
+              <span></span>
+              <span></span>
+            </button>
+            <div class="site-logo">
+              <a class="navbar-brand" href="index.html">
+                <h3>Appuru</h3>
+              </a>
+            </div>
+          </div>
+          <!--//docs-logo-wrapper-->
+          <div
+            class="docs-top-utilities d-flex justify-content-end align-items-center"
+          >
+            <ul
+              class="social-list list-inline mx-md-3 mx-lg-5 mb-0 d-none d-lg-flex"
+            >
+              <li class="list-inline-item">
+                <a href="https://github.com/chiragpgauswami" target="_blank"
+                  ><i class="fab fa-github fa-fw"></i
+                ></a>
+              </li>
+              <li class="list-inline-item">
+                <a href="https://twitter.com/chirag_v1" target="_blank"
+                  ><i class="fab fa-twitter fa-fw"></i
+                ></a>
+              </li>
+              <li class="list-inline-item">
+                <a
+                  href="https://www.facebook.com/chiragpgauswami"
+                  target="_blank"
+                  ><i class="fab fa-facebook fa-fw"></i
+                ></a>
+              </li>
+              <li class="list-inline-item">
+                <a
+                  href="https://www.instagram.com/chiragpgauswami/"
+                  target="_blank"
+                  ><i class="fab fa-instagram fa-fw"></i
+                ></a>
+              </li>
+              <li class="list-inline-item">
+                <a
+                  href="https://www.behance.net/chiragpgauswami"
+                  target="_blank"
+                  ><i class="fab fa-behance fa-fw"></i
+                ></a>
+              </li>
+              <li class="list-inline-item">
+                <a href="https://dribbble.com/chiragpgauswami" target="_blank"
+                  ><i class="fab fa-dribbble fa-fw"></i
+                ></a>
+              </li>
+            </ul>
+            <!--//social-list-->
+            <a
+              href="https://chiragpgauswami.vercel.app/"
+              target="_blank"
+              class="btn btn-primary d-none d-lg-flex"
+              >Download</a
+            >
+          </div>
+          <!--//docs-top-utilities-->
+        </div>
+        <!--//container-->
+      </div>
+      <!--//branding-->
+    </header>
+    <!--//header-->
+
+    <div class="docs-wrapper">
+      <div id="docs-sidebar" class="docs-sidebar">
+        <nav id="docs-nav" class="docs-nav navbar">
+          <ul class="section-items list-unstyled nav flex-column pb-3">
+            <li class="nav-item section-title">
+              <a class="nav-link scrollto" href="#section-1"
+                ><span class="theme-icon-holder me-2"
+                  ><i class="fas fa-map-signs"></i></span
+                >Introduction</a
+              >
+            </li>
+
+            <li class="nav-item section-title mt-3">
+              <a class="nav-link scrollto" href="#section-2"
+                ><span class="theme-icon-holder me-2"
+                  ><i class="fas fa-folder"></i></span
+                >Structure</a
+              >
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link scrollto" href="#item-2-1"
+                >File & Folder Structure</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link scrollto" href="#item-2-2">HTML Structure</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link scrollto" href="#item-2-3">Designing Files</a>
+            </li>
+
+            <li class="nav-item section-title mt-3">
+              <a class="nav-link scrollto" href="#section-3"
+                ><span class="theme-icon-holder me-2"
+                  ><i class="fas fa-plug"></i></span
+                >Plugins & Resources</a
+              >
+            </li>
+
+            <li class="nav-item section-title mt-3">
+              <a class="nav-link scrollto" href="#section-4"
+                ><span class="theme-icon-holder me-2"
+                  ><i class="fas fa-lightbulb"></i></span
+                >Support</a
+              >
+            </li>
+
+            <li class="nav-item section-title mt-3">
+              <a class="nav-link scrollto" href="#section-5"
+                ><span class="theme-icon-holder me-2"
+                  ><i class="fas fa-circle-info"></i></span
+                >Change Log</a
+              >
+            </li>
+          </ul>
+        </nav>
+        <!--//docs-nav-->
+      </div>
+      <!--//docs-sidebar-->
+      <div class="docs-content">
+        <div class="container">
+          <article class="docs-article" id="section-1">
+            <header class="docs-header">
+              <h1 class="docs-heading">
+                Introduction
+                <!-- <span class="docs-time">Last updated: 2019-06-01</span> -->
+              </h1>
+              <section class="docs-intro docs-section">
+                <p>
+                  Appuru is a Bootstrap 5 HTML app landing template with a color
+                  switcher feature. It's lightweight and beautiful, with a clean
+                  and modern design that's easy to customize. The color switcher
+                  feature lets users change the look and feel of the template
+                  with a single click. Appuru comes with a variety of pre-built
+                  sections, such as a hero section, a features section, a call
+                  to action section, and more. It's easy to use and customize
+                  with clean and well-organized code.
+                </p>
+              </section>
+              <!--//docs-intro-->
+            </header>
+          </article>
+
+          <article class="docs-article" id="section-2">
+            <header class="docs-header">
+              <h1 class="docs-heading">Structure</h1>
+              <section class="docs-intro">
+                <p>
+                  I have tried to follow the standards and modular structure
+                  while developing the theme. Following sections are explaining
+                  the theme File & Folder, structure, html file struture and
+                  plugins.
+                </p>
+              </section>
+              <!--//docs-intro-->
+            </header>
+            <section class="docs-section" id="item-2-1">
+              <h2 class="section-heading">File & Folder Structure</h2>
+              <div class="docs-code-block">
+                <pre class="shadow-lg rounded">
+                  <code class="json hljs">
+  ├── html files
+  ├── css/
+  │   └── All css files.
+  ├── fonts/
+  ├── images/
+  │   └── All images.
+  └── js/
+      └── All common Javascripts files.
+                  </code>
+                </pre>
+              </div>
+              <!--//docs-code-block-->
+            </section>
+            <!--//section-->
+
+            <section class="docs-section" id="item-2-2">
+              <h2 class="section-heading">HTML Structure</h2>
+              <div class="docs-code-block">
+                <pre class="shadow-lg rounded">
+                  <code class="json hljs">
+  &lt;body&gt;
+      &lt;!-- ========== Preloader ========== --&gt;
+      &lt;div class="preloader"&gt;
+
+      &lt;/div&gt;
+      &lt;!-- ========== Preloader ========== --&gt;
+
+      &lt;!-- ========== Color Switcher ========== --&gt;
+      &lt;div class="color-switcher"&gt;
+
+      &lt;/div&gt;
+      &lt;!-- ========== Color Switcher ========== --&gt;
+
+      &lt;!-- ========== Site Header ========== --&gt;
+      &lt;header class="site-header d-lg-block d-none"&gt;
+
+      &lt;/header&gt;
+      &lt;!-- ========== Site Header ========== --&gt;
+      &lt;!-- ========== Site Mobile Header ========== --&gt;
+      &lt;header class="site-mobile-header d-block d-lg-none"&gt;
+
+      &lt;/header&gt;
+      &lt;!-- ========== Site Mobile Header ========== --&gt;
+
+      &lt;!-- ========== Mobile Navigation ========== --&gt;
+      &lt;div class="mobile-navigation-wrap p-4"&gt;
+
+      &lt;/div&gt;
+      &lt;!-- ========== Mobile Navigation ========== --&gt;
+
+      &lt;main&gt;
+          &lt;!-- ========== Site Banner ========== --&gt;
+          &lt;section class="site-banner" id="home"&gt;
+          &lt;/section&gt;
+          &lt;!-- ========== Site Banner ========== --&gt;
+
+          &lt;!-- ========== About Section ========== --&gt;
+          &lt;section class="sp-t" id="about"&gt;
+          &lt;/section&gt;
+          &lt;!-- ========== About Section ========== --&gt;
+
+          &lt;!-- ========== General Features ========== --&gt;
+          &lt;section class="sp-t" id="features"&gt;
+          &lt;/section&gt;
+          &lt;!-- ========== General Features ========== --&gt;
+
+          &lt;!-- ========== Screenshot ========== --&gt;
+          &lt;section class="sp-t"&gt;
+          &lt;/section&gt;
+          &lt;!-- ========== Screenshot ========== --&gt;
+
+          &lt;!-- ========== Pricing Plans ========== --&gt;
+          &lt;section class="pricing-plan sp-tb" id="pricing"&gt;
+          &lt;/section&gt;
+          &lt;!-- ========== Pricing Plans ========== --&gt;
+
+          &lt;!-- ========== Trusties ========== --&gt;
+          &lt;section&gt;
+          &lt;/section&gt;
+          &lt;!-- ========== Trusties ========== --&gt;
+
+          &lt;!-- ========== Testimonails ========== --&gt;
+          &lt;section class="testimonials sp-t" id="testimonials"&gt;
+          &lt;/section&gt;
+          &lt;!-- ========== Testimonails ========== --&gt;
+
+          &lt;!-- ========== Blogs ========== --&gt;
+          &lt;section class="sp-tb" id="blogs"&gt;
+          &lt;/section&gt;
+          &lt;!-- ========== Blogs ========== --&gt;
+
+          &lt;!-- ========== Download App ========== --&gt;
+          &lt;section&gt;
+          &lt;/section&gt;
+          &lt;!-- ========== Download App ========== --&gt;
+
+          &lt;!-- ========== Contact Area ========== --&gt;
+          &lt;section class="sp-tb" id="contact"&gt;
+          &lt;/section&gt;
+          &lt;!-- ========== Contact Area ========== --&gt;
+      &lt;/main&gt;
+
+      &lt;!-- ========== Site Footer ========== --&gt;
+      &lt;footer class="sp-b"&gt;
+      &lt;/footer&gt;
+      &lt;!-- ========== Site Footer ========== --&gt;
+
+      &lt;!-- ========== Back To Top ========== --&gt;
+      &lt;div class="back-to-top"&gt;
+      &lt;/div&gt;
+      &lt;!-- ========== Back To Top ========== --&gt;
+  &lt;/body&gt;
+                  </code>
+              </pre>
+              </div>
+              <!--//docs-code-block-->
+            </section>
+            <!--//section-->
+
+            <section class="docs-section" id="item-2-3">
+              <h2 class="section-heading">Designing Files</h2>
+              <ul>
+                <li>
+                  <h5 class="pt-3">CSS</h5>
+                </li>
+                <p>Files are explained below:</p>
+                <table class="table m-0 table-bordered">
+                  <thead>
+                    <tr>
+                      <th style="width: 20%"><i class="ti-file"></i> File</th>
+                      <th>Description</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>
+                        <code>vendor</code>
+                      </td>
+                      <td>This folder is containing all vendor styles.</td>
+                    </tr>
+
+                    <tr>
+                      <td>
+                        <code>style.css</code>
+                      </td>
+                      <td>
+                        This file is containing all common styles for all the
+                        pages.
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td>
+                        <code>responsive.css</code>
+                      </td>
+                      <td>
+                        This file is containing all responsive styles for all
+                        the pages.
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td>
+                        <code>blog.css</code>
+                      </td>
+                      <td>
+                        This file is containing all styles for the blog pages.
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+                <li>
+                  <h5 class="pt-3">JS</h5>
+                </li>
+                <p>Files are explained below:</p>
+                <table class="table m-0 table-bordered">
+                  <thead>
+                    <tr>
+                      <th style="width: 20%"><i class="ti-file"></i> File</th>
+                      <th>Description</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>
+                        <code>vendor</code>
+                      </td>
+                      <td>This folder is containing all vendor js.</td>
+                    </tr>
+
+                    <tr>
+                      <td>
+                        <code>app.js</code>
+                      </td>
+                      <td>
+                        This file is containing all common js for all the pages.
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </ul>
+            </section>
+            <!--//section-->
+          </article>
+          <!--//docs-article-->
+
+          <article class="docs-article" id="section-3">
+            <header class="docs-header">
+              <h1 class="docs-heading">Plugins & Resources</h1>
+              <section class="docs-intro">
+                <p>
+                  We've used the following resources as listed. These are some
+                  awesome creation and we are thankful to the community.
+                </p>
+                <ul>
+                  <li>
+                    <a href="https://getbootstrap.com/" target="_blank"
+                      >Bootstrap</a
+                    >
+                  </li>
+                  <li>
+                    <a href="https://icons8.com/line-awesome" target="_blank"
+                      >Line Awesome Icons</a
+                    >
+                  </li>
+                  <li>
+                    <a href="https://unsplash.com/" target="_blank">Unsplash</a>
+                  </li>
+
+                  <li>
+                    <a href="https://jquery.com/" target="_blank">JQuery</a>
+                  </li>
+                  <li>
+                    <a
+                      href="https://owlcarousel2.github.io/OwlCarousel2/"
+                      target="_blank"
+                      >Owl Carousel</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="https://kenwheeler.github.io/slick/"
+                      target="_blank"
+                      >Slick Slider</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="https://mattboldt.com/demos/typed-js/"
+                      target="_blank"
+                      >Typed.js</a
+                    >
+                  </li>
+                  <li>
+                    <a href="https://wowjs.uk/" target="_blank">Wow.js</a>
+                  </li>
+                </ul>
+              </section>
+              <!--//docs-intro-->
+            </header>
+          </article>
+          <!--//docs-article-->
+
+          <article class="docs-article" id="section-4">
+            <header class="docs-header">
+              <h1 class="docs-heading">Support</h1>
+              <section class="docs-intro">
+                <p>
+                  Once again thank you for your purchase. I'll be happy to
+                  answer the the questions you have related to the theme. In
+                  case if you have any suggestion or feature, request please
+                  feel free to contact me, I'll try to implement it and will
+                  release as part of future updates. Stay Awesome!
+                </p>
+                <p>
+                  <a href="mailto:chiragpgauswami@gmail.com"
+                    >chiragpgauswami@gmail.com</a
+                  >
+                </p>
+              </section>
+              <!--//docs-intro-->
+            </header>
+          </article>
+          <!--//docs-article-->
+
+          <article class="docs-article" id="section-5" style="min-height: 75vh">
+            <header class="docs-header">
+              <h1 class="docs-heading">Changelog</h1>
+              <section class="docs-intro">
+                <p>Version 1.0.0</p>
+                <ul>
+                  <li>Initial Released</li>
+                </ul>
+              </section>
+              <!--//docs-intro-->
+            </header>
+          </article>
+          <!--//docs-article-->
+
+          <footer class="footer">
+            <div class="container text-center py-5">
+              <!--/* This template is free as long as you keep the footer attribution link. If you'd like to use the template without the attribution link, you can buy the commercial license via our website: themes.3rdwavemedia.com Thank you for your support. :) */-->
+              <small class="copyright"
+                >Designed with <span class="sr-only">love</span
+                ><i class="fas fa-heart" style="color: #fb866a"></i> by
+                <a
+                  class="theme-link"
+                  href="https://chiragpgauswami.vercel.app/"
+                  target="_blank"
+                  >Chirag Gauswami</a
+                >
+              </small>
+
+              <ul class="social-list list-unstyled pt-4 mb-0">
+                <li class="list-inline-item">
+                  <a href="https://github.com/chiragpgauswami" target="_blank"
+                    ><i class="fab fa-github fa-fw"></i
+                  ></a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="https://twitter.com/chiragpgauswami" target="_blank"
+                    ><i class="fab fa-twitter fa-fw"></i
+                  ></a>
+                </li>
+                <li class="list-inline-item">
+                  <a
+                    href="https://www.facebook.com/chiragpgauswami"
+                    target="_blank"
+                    ><i class="fab fa-facebook fa-fw"></i
+                  ></a>
+                </li>
+                <li class="list-inline-item">
+                  <a
+                    href="https://www.instagram.com/chiragpgauswami/"
+                    target="_blank"
+                    ><i class="fab fa-instagram fa-fw"></i
+                  ></a>
+                </li>
+                <li class="list-inline-item">
+                  <a
+                    href="https://www.behance.net/chiragpgauswami"
+                    target="_blank"
+                    ><i class="fab fa-behance fa-fw"></i
+                  ></a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="https://dribbble.com/chiragpgauswami" target="_blank"
+                    ><i class="fab fa-dribbble fa-fw"></i
+                  ></a>
+                </li>
+              </ul>
+              <!--//social-list-->
+            </div>
+          </footer>
+        </div>
+      </div>
+    </div>
+    <!--//docs-wrapper-->
+
+    <!-- Javascript -->
+    <script src="assets/plugins/popper.min.js"></script>
+    <script src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Page Specific JS -->
+    <script src="assets/plugins/smoothscroll.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.8/highlight.min.js"></script>
+    <script src="assets/js/highlight-custom.js"></script>
+    <script src="assets/plugins/simplelightbox/simple-lightbox.min.js"></script>
+    <script src="assets/plugins/gumshoe/gumshoe.polyfills.min.js"></script>
+    <script src="assets/js/docs.js"></script>
+  </body>
+</html>

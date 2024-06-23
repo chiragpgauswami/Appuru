@@ -1,0 +1,640 @@
+/*
+  Template Name: Appuru
+  Version: 1.0
+  Author: Chirag Gauswami
+  Author URI:  https://chiragpgauswami.vercel.app/
+  Description: App Landing Template (HTML)
+
+  [TABLE OF CONTENTS] 
+  1. Page Title
+  2. Blogs
+  3. Right Sidebar
+  4. Blog Details
+  5. Pagination
+  6. Comments
+*/
+
+/* ==========================================================================================
+   -- Page Title --
+========================================================================================== */
+
+.appuru_tm_section {
+  width: 100%;
+  height: auto;
+  position: relative;
+  overflow: hidden;
+}
+
+.appuru_tm_news {
+  width: 100%;
+  height: auto;
+  clear: both;
+  float: left;
+  position: relative;
+  z-index: 2;
+}
+
+.page-banner .appuru_tm_news .news_inner {
+  padding: 200px 20px;
+  background: rgb(116, 0, 184);
+  background: -moz-var(--main-gradient);
+  background: -webkit-var(--main-gradient);
+  background: var(--main-gradient);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#7400b8", endColorstr="#5e60ce", GradientType=1);
+}
+
+.page-banner .appuru_tm_news .title h1 {
+  color: #fff;
+}
+
+.page-banner .appuru_tm_news .title {
+  text-align: center;
+}
+
+.appuru_tm_main_title {
+  width: 100%;
+  height: auto;
+}
+
+.appuru_tm_news .news_inner {
+  width: 100%;
+  height: auto;
+  clear: both;
+  float: left;
+  padding: 110px 0px 120px 0px;
+}
+
+/* ==========================================================================================
+   -- Blogs --
+========================================================================================== */
+
+.image.thumb img {
+  border-radius: 15px;
+}
+
+.post-info span.date:after {
+  position: relative;
+  content: "|";
+  color: #7d7789;
+  left: 12px;
+  font-size: 12px;
+  top: -2px;
+}
+
+.rightbox .post-recent .date {
+  font-size: 13px;
+}
+
+.news_inner.blog-news {
+  background-color: #fff;
+}
+
+.blog-news .thumb img {
+  border-radius: 12px;
+}
+
+.blog-news .blog_single_details .descriptions p {
+  margin-bottom: 20px;
+}
+
+.blog-news .appuru_tm_news ul li {
+  float: unset !important;
+  margin: 0;
+  width: unset !important;
+}
+
+blockquote {
+  margin-top: 25px;
+  margin-bottom: 25px;
+  border-left: 5px solid var(--theme-color1);
+  padding: 20px;
+  font-size: 21px;
+  font-style: italic;
+  color: #fff;
+  background-color: #070415;
+}
+
+blockquote p:last-child {
+  margin-bottom: 0 !important;
+}
+
+.post-info {
+  margin-top: 25px;
+  margin-bottom: 15px;
+}
+
+.post-info span.date {
+  padding-right: 20px;
+}
+
+[class^="icon-"]:before,
+[class*=" icon-"]:before {
+  margin-left: 0;
+}
+
+.post-info span.user a {
+  color: #54545f;
+}
+
+.list_inner h4.post-title a:hover {
+  color: #24315e;
+}
+
+.post_title {
+  font-weight: 600;
+}
+
+.blog-news.blog-list .news_list {
+  margin-bottom: 60px;
+}
+
+.leftbox {
+  padding-right: 20px;
+}
+
+/* ==========================================================================================
+   -- Right Sidebar --
+========================================================================================== */
+
+.rightSidebar a {
+  line-height: 28px;
+  color: var(--main-color);
+}
+
+.widget_search .wp-block-search__label {
+  display: none;
+}
+
+.widget_block {
+  margin: 25px 0px;
+  width: 100%;
+  float: left;
+}
+
+.rightSidebar {
+  margin-top: 15px;
+}
+
+.rightSidebar h2.aon-title {
+  color: var(--black);
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.widget_search input {
+  height: 60px;
+  border-radius: 10px;
+  padding-left: 15px;
+  border: 1px solid #949494;
+  flex-grow: 1;
+  margin-left: 0;
+  margin-right: 0;
+  min-width: 3rem;
+  padding: 8px;
+  text-decoration: unset !important;
+}
+
+.rightSidebar .wp-block-search__inside-wrapper {
+  position: relative;
+  display: flex;
+  flex: auto;
+  flex-wrap: nowrap;
+  max-width: 100%;
+}
+
+.widget_search button {
+  border: 1px solid var(--theme-color2);
+  background: var(--main-gradient);
+  text-transform: capitalize;
+  top: 0;
+  right: 0;
+  z-index: 2;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  padding: 17px;
+  color: #fff;
+  font-size: 16px;
+}
+
+.rightbox.rightSidebar .wp-block-group__inner-container h2,
+.rightbox.rightSidebar h2.aon-title {
+  font-size: 24px;
+}
+
+.rightbox.rightSidebar h2.aon-title {
+  margin-bottom: 30px;
+}
+
+.rightSidebar .post-recent li {
+  margin: 0px 0px 25px 0px;
+  width: 100%;
+  float: left;
+  list-style: none;
+}
+
+.rightSidebar .post-recent li .list_inner {
+  width: 100%;
+  float: left;
+  position: relative;
+  display: flex;
+}
+
+.rightSidebar .post-recent li .list_inner .image {
+  width: 85px;
+  min-width: 85px;
+  height: 85px;
+  min-height: 85px;
+  border-radius: 5px;
+  position: relative;
+  overflow: hidden;
+  margin-right: 10px;
+}
+
+.rightSidebar .post-recent li .list_inner .image .main {
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: 5px;
+  transform: scale(1) translateZ(0);
+}
+
+.rightSidebar .widget_categories ul li,
+.rightSidebar .widget_tag_cloud ul li {
+  list-style: none;
+}
+
+.rightSidebar .widget_tag_cloud ul li {
+  display: inline-block;
+  margin-bottom: 20px;
+  margin-right: 3px;
+}
+
+.rightSidebar .widget_tag_cloud ul li a,
+.aon-tags .tagcloud a {
+  font-size: 15px !important;
+  color: var(--main-color);
+  border: 1px solid #ddd;
+  border-radius: 50px;
+  padding: 8px 25px 10px 25px;
+}
+
+.rightSidebar .widget_tag_cloud ul li a:hover,
+.aon-tags .tagcloud a:hover {
+  color: #fff;
+  background-color: var(--theme-color1);
+  border: 1px solid var(--theme-color1);
+}
+
+.rightSidebar .gallery ul li {
+  list-style: none;
+  margin: 0px 0px 5px 0px;
+  float: left;
+  width: 33.3333%;
+  padding-left: 5px;
+}
+
+.rightSidebar .gallery ul li .list_inner {
+  width: 100%;
+  height: auto;
+  clear: both;
+  float: left;
+  position: relative;
+}
+
+.rightSidebar .gallery ul li .list_inner .image {
+  position: relative;
+  overflow: hidden;
+  border-radius: 5px;
+}
+
+.rightSidebar .gallery ul li .list_inner .image .main {
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: 5px;
+  transform: scale(1) translateZ(0);
+}
+
+.rightSidebar .gallery ul li .list_inner img {
+  max-width: 100%;
+  width: 100%;
+  height: 89px !important;
+  clear: both;
+  float: left;
+  position: relative;
+  border-radius: 5px;
+}
+
+/* ==========================================================================================
+   -- Blog Details --
+========================================================================================== */
+
+.aon-tags {
+  display: inherit;
+}
+
+.aon-tags .tagcloud li {
+  list-style: none;
+  margin-bottom: 20px;
+  display: inline-block;
+}
+
+.stButton .stButton_gradient {
+  height: 21px !important;
+}
+
+.st_instagram_hcount .stButton_gradient {
+  padding: 0 !important;
+}
+
+.st_instagram_hcount .stArrow {
+  line-height: 21px !important;
+}
+
+.post-social-icons .stMainServices {
+  width: 22px !important;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.post-social-icons .stButton .chicklets {
+  width: 20px;
+  overflow: hidden;
+  display: -webkit-inline-box;
+  height: 20px;
+  line-height: 21px;
+}
+
+.post-social-icons {
+  float: right;
+}
+
+.post-area-tags {
+  width: 100%;
+  float: left;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+  margin-bottom: 50px;
+}
+
+.aon-bd-title {
+  padding-top: 5px;
+  margin-bottom: 20px;
+  margin-right: 10px;
+}
+
+.breadcrumbs,
+.breadcrumbs a {
+  color: #fff;
+}
+
+.breadcrumbs span.active {
+  color: #fff;
+}
+
+.blog-list h4.post-title {
+  margin-bottom: 15px;
+}
+
+.blog-list h4.post-title a {
+  font-size: 32px;
+  font-weight: 700;
+  color: var(--bs-body-color);
+}
+
+/* ==========================================================================================
+   -- Pagination --
+========================================================================================== */
+
+.pagination {
+  width: 100%;
+  height: auto;
+  clear: both;
+  float: left;
+  position: relative;
+}
+
+.pagination li {
+  list-style: none;
+  display: inline-block;
+}
+
+.pagination li a {
+  color: #000;
+  border: 1px solid #ddd;
+  text-align: center;
+  margin-right: 8px;
+  padding: 13px;
+  border-radius: 30px !important;
+  font-weight: 500;
+  width: 50px;
+  height: 50px;
+  display: inline-block;
+}
+
+.pagination li.active a,
+.pagination li a:not(.next, .prev):hover {
+  border: 1px solid transparent;
+  background: var(--theme-color1);
+  color: #fff !important;
+  background-color: var(--theme-color1) !important;
+  border-color: var(--theme-color1) !important;
+}
+
+.pagination a.next {
+  background: url(../images/right-arrow.png) no-repeat right;
+  background-position-x: 50%;
+  image-rendering: auto;
+  background-size: 12px;
+  image-rendering: crisp-edges;
+  image-rendering: -webkit-optimize-contrast;
+}
+
+.pagination a.prev {
+  background: url(../images/left-arrow.png) no-repeat right;
+  background-position-x: 50%;
+  image-rendering: auto;
+  background-size: 12px;
+  image-rendering: crisp-edges;
+  image-rendering: -webkit-optimize-contrast;
+}
+
+.pagination a.next:hover {
+  background: url(../images/right-arrow-w.png) no-repeat right;
+}
+
+.pagination a.prev:hover {
+  background: url(../images/left-arrow-w.png) no-repeat right;
+}
+
+.pagination a.prev span,
+.pagination a.next span {
+  opacity: 0;
+}
+
+.pagination a.prev:hover {
+  border: 1px solid transparent;
+  background: url(../images/left-arrow-w.png) no-repeat right;
+  background-position-x: 50%;
+  image-rendering: auto;
+  background-size: 12px;
+  image-rendering: crisp-edges;
+  image-rendering: -webkit-optimize-contrast;
+  background-color: var(--theme-color1);
+}
+
+.pagination a.next:hover {
+  border: 1px solid transparent;
+
+  background: url(../images/right-arrow-w.png) no-repeat right;
+  background-position-x: 50%;
+  image-rendering: auto;
+  background-size: 12px;
+  image-rendering: crisp-edges;
+  image-rendering: -webkit-optimize-contrast;
+  background-color: var(--theme-color1);
+}
+
+.leftbox .news_list:first-child {
+  margin-top: 40px;
+}
+
+/* ==========================================================================================
+   -- Comments --
+========================================================================================== */
+
+h3.comment-title {
+  font-size: 28px;
+  margin-bottom: 25px;
+  margin-top: 0;
+}
+
+.clear#comment-list {
+  margin-top: 60px;
+}
+
+.comment-form-cookies-consent,
+.required-field-message {
+  display: none;
+}
+
+.cm-respond {
+  width: 100%;
+  height: auto;
+  clear: both;
+  float: left;
+  background-color: #f8f9fc;
+  padding: 40px;
+  border-radius: 12px;
+}
+
+.comment-list .comment-date {
+  font-size: 15px;
+  font-style: italic;
+}
+
+form.comment-form input.form-control,
+form.comment-form textarea.form-control {
+  width: 100% !important;
+  border-radius: 10px !important;
+  padding: 25px !important;
+  background-color: #fff;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.05) !important;
+  border: none;
+  font-size: 18px;
+  color: #6f6b80 !important;
+  letter-spacing: 0px;
+}
+
+form.comment-form input.form-control {
+  height: 60px !important;
+  margin-bottom: 20px;
+}
+
+p.logged-in-as {
+  margin-bottom: 10px;
+}
+
+h3.comment-title a,
+p.logged-in-as a {
+  color: var(--bs-body-color);
+}
+
+.cm-respond textarea::placeholder {
+  opacity: 0.5;
+}
+
+.comment-list li {
+  list-style: none;
+}
+
+.comment-list li img.avatar {
+  border-radius: 50%;
+}
+
+.comment-list li .comment-info cite {
+  font-size: 24px;
+  font-style: normal;
+}
+
+a.comment-reply-link:hover {
+  color: #fff;
+  background-color: var(--theme-color1);
+}
+
+a.comment-reply-link {
+  text-decoration: none;
+  color: #54545f;
+  display: inline-block;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 5px 15px;
+}
+
+#cancel-comment-reply-link {
+  color: var(--bs-body-color);
+  text-decoration: none;
+  display: inline-block;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 12px 15px;
+  width: auto;
+  font-size: 15px;
+  position: absolute;
+  right: 0px;
+}
+
+.comment-respond h3 {
+  position: relative;
+}
+
+.comment-list li .comment-info cite {
+  font-size: 22px !important;
+  font-weight: 600 !important;
+  color: var(--black) !important;
+}
+
+.comment-list .comment-date {
+  font-size: 13px;
+  font-style: unset;
+  margin-bottom: 20px;
+}
+
+.comment-body .comment-info > p {
+  margin-top: 12px !important;
+}
+
+a.comment-reply-link {
+  font-size: 15px;
+}
